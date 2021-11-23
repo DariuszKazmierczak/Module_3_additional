@@ -1,0 +1,133 @@
+$color-main: #424242;
+$color-light: #fff;
+$color-cta: #0ad17e;
+
+$font-text: 'Poppins', sans-serif;
+
+$font-size__title: 40px;
+$font-size__subtitle: 22px;
+$font-size__description: 16px;
+
+/* GLOBAL */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 1440px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: $font-text;
+	font-size: 16px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 80%;
+}
+
+/* HEADER */
+
+header {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(https://images.pexels.com/photos/1933319/pexels-photo-1933319.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+/* NAV */
+
+.navigation {
+	color: $color-light;
+
+	.nav-wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.nav-left {
+			padding: 20px 0 20px 40px;
+			font-size: $font-size__subtitle;
+
+			span {
+				color: $color-cta;
+			}
+		}
+
+		.nav-right {
+			padding: 20px 0;
+
+			.nav-list {
+				display: flex;
+
+				.nav-list__link {
+					margin-right: 20px;
+					list-style: none;
+
+					a {
+						text-decoration: none;
+						color: $color-light;
+						transition: 0.3s all;
+
+						&:hover {
+							color: $color-cta;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* HERO */
+
+.hero {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: $color-light;
+
+	.hero-title {
+		font-size: $font-size__title;
+		font-weight: 400;
+
+		span {
+			font-weight: 600;
+		}
+	}
+
+	.hero-subtitle {
+		font-weight: 500;
+		font-size: $font-size__subtitle;
+		margin-bottom: 20px;
+	}
+
+	.hero-btn {
+		padding: 10px 40px;
+		background: transparent;
+		color: $color-light;
+		border-radius: 40px;
+		text-decoration: none;
+		font-weight: 500;
+		border: 2px solid $color-cta;
+		transition: 0.5s all;
+
+		&:hover {
+			background: $color-cta;
+		}
+	}
+}

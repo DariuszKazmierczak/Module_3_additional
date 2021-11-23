@@ -1,0 +1,135 @@
+/* GLOBAL */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 80%;
+}
+
+/* HEADER */
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(https://images.pexels.com/photos/1933319/pexels-photo-1933319.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* NAV */
+.navigation {
+  color: #fff;
+}
+
+.navigation .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation .nav-wrapper .nav-left {
+  padding: 20px 0 20px 40px;
+  font-size: 22px;
+}
+
+.navigation .nav-wrapper .nav-left span {
+  color: #0ad17e;
+}
+
+.navigation .nav-wrapper .nav-right {
+  padding: 20px 0;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list .nav-list__link {
+  margin-right: 20px;
+  list-style: none;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list .nav-list__link a {
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.navigation .nav-wrapper .nav-right .nav-list .nav-list__link a:hover {
+  color: #0ad17e;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero .hero-title {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.hero .hero-title span {
+  font-weight: 600;
+}
+
+.hero .hero-subtitle {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.hero .hero-btn {
+  padding: 10px 40px;
+  background: transparent;
+  color: #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid #0ad17e;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.hero .hero-btn:hover {
+  background: #0ad17e;
+}
+/*# sourceMappingURL=style.css.map */
